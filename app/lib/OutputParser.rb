@@ -222,7 +222,7 @@ module OutputParser
 
   def self.parse_cppigloo(output)
     if output =~ /Test run complete. (\d+) tests run, (\d+) succeeded, (\d+) failed./
-      if $3.to_i != 0
+      if $3 == "0"
         :red
       else
         :green
