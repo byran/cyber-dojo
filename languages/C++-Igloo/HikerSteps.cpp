@@ -9,7 +9,7 @@ void HikerSteps::CallIsHandled()
 
 void HikerSteps::HandleTwoParameters()
 {
-   ASSERT_EQ(GetParam(0), "result0");
-   ASSERT_EQ(GetParam(1), "result1");
+   ASSERT_EQ(GetParameter(0), "result0");
+   ASSERT_EQ(GetParameter(1), "result1");
 }
 

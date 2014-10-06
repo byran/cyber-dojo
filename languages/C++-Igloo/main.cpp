@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-#include <igloo\igloo_alt.h>
-#include "Hiker.feature.h"
+#include <igloo/igloo_alt.h>
+#include "Hiker.feature.hpp"
 
 using namespace ::igloo;
 

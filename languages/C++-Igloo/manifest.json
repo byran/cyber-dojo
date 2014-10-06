@@ -1,13 +1,14 @@
 
 {
   "visible_filenames": [
+    "Hiker.feature.hpp",
     "StepHandler.cpp",
     "StepHandler.hpp",
     "HikerSteps.cpp",
     "HikerSteps.hpp",
-    "Hiker.feature.hpp",
     "hiker.cpp",
     "hiker.hpp",
+	"main.cpp",
     "makefile",
     "cyber-dojo.sh"
   ],

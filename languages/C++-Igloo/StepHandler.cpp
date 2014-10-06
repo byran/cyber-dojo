@@ -14,14 +14,14 @@ void StepHandler::ClearParameters()
     m_parameters.clear();
 }
 
-string StepHandler::GetParameter(int index)
+string StepHandler::GetParameter(int index) const
 {
     return m_parameters[index];
 }
 
 void StepHandler::ExtractParameters()
 {
-    ClearParams();
+    ClearParameters();
     std::string copy = m_current_line;
     std::regex search("\\[.*?\\]");
     std::smatch match;
