@@ -2,7 +2,7 @@
 
 require_relative '../cyberdojo_test_base'
 
-class OutputCUnityTests < CyberDojoTestBase
+class OutputCPPIglooTests < CyberDojoTestBase
 
   test 'failure is red' do
     output =
