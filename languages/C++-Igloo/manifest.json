@@ -1,0 +1,18 @@
+
+{
+  "visible_filenames": [
+    "StepHandler.cpp",
+    "StepHandler.hpp",
+    "HikerSteps.cpp",
+    "HikerSteps.hpp",
+    "Hiker.feature.hpp",
+    "hiker.cpp",
+    "hiker.hpp",
+    "makefile",
+    "cyber-dojo.sh"
+  ],
+  "filename_extension" : ".cpp",
+  "display_name": "C++, Igloo",
+  "unit_test_framework": "cppigloo",
+  "image_name": "cyberdojo/gpp-4.8.1_igloo"
+}
