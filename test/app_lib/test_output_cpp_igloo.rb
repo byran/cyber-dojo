@@ -87,7 +87,7 @@ class OutputCUnityTests < CyberDojoTestBase
   #- - - - - - - - - - - - - - - - - - - - - -
 
   def colour_of(output)
-    OutputParser::parse_cunity(output)
+    OutputParser::parse_cppigloo(output)
   end
 
 end
