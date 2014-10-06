@@ -221,16 +221,16 @@ module OutputParser
   end
 
   def self.parse_cppigloo(output)
-    if output =~ /Test run complete. (\d+) tests run, (\d+) succeeded, (\d+) failed./
+    igloo_pattern =  /Test run complete. (\d+) tests run, (\d+) succeeded, (\d+) failed./
+    if igloo_pattern.match(output)
       if $3 == "0"
-        :red
-      else
         :green
+      else
+        :red
       end
     else
       :amber
     end
-	return :red
   end
 
 end
