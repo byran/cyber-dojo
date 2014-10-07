@@ -11,7 +11,7 @@ public:
     void SetCurrentLine(std::string line);
 protected:
     void ClearParameters();
-    std::string GetParameter(int index) const;
+    std::string GetParameter(size_t index) const;
 protected:
     std::vector<std::string> m_parameters;
     std::string m_current_line;

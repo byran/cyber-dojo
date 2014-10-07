@@ -14,7 +14,7 @@ void StepHandler::ClearParameters()
     m_parameters.clear();
 }
 
-string StepHandler::GetParameter(int index) const
+string StepHandler::GetParameter(size_t index) const
 {
     if(m_parameters.size() > index)
         return m_parameters[index];
