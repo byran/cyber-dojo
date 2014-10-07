@@ -1,7 +1,7 @@
 
 {
   "visible_filenames": [
-    "Hiker.feature.hpp",
+    "Hiker.feature.cpp",
     "StepHandler.cpp",
     "StepHandler.hpp",
     "HikerSteps.cpp",

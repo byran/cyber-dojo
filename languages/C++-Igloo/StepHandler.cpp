@@ -16,27 +16,26 @@ void StepHandler::ClearParameters()
 
 string StepHandler::GetParameter(int index) const
 {
-    return m_parameters[index];
+    if(m_parameters.size() > index)
+        return m_parameters[index];
+    else
+        return "Unknown Parameter Index!!!";
 }
 
 void StepHandler::ExtractParameters()
 {
     ClearParameters();
-    std::string copy = m_current_line;
-    std::regex search("\\[.*?\\]");
-    std::smatch match;
-
-    while (std::regex_search(copy, match, search))
+    vector<string> tokens;
+    istringstream copy(m_current_line);
+    string token;
+    while(getline(copy, token, '|'))
     {
-        std::stringstream ss;
-        for (auto x : match)
-        {
-            ss << x;
-        }
-        copy = match.suffix().str();
-        std::string token = ss.str();
-        token = token.substr(1, token.size() - 2);
-        m_parameters.push_back(token);
+        tokens.push_back(token);
+    }
+
+    for(size_t i = 1; i < tokens.size(); i+=2)
+    {
+        m_parameters.push_back(tokens[i]);
     }
 }
 
