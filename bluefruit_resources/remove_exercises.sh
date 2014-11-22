@@ -1,0 +1,36 @@
+#!/bin/bash
+
+rm -rf /var/www/cyber-dojo/exercises/100_doors
+rm -rf /var/www/cyber-dojo/exercises/Anagrams
+rm -rf /var/www/cyber-dojo/exercises/Bowling_Game
+rm -rf /var/www/cyber-dojo/exercises/Calc_Stats
+rm -rf /var/www/cyber-dojo/exercises/Count_Coins
+rm -rf /var/www/cyber-dojo/exercises/Diversion
+#rm -rf /var/www/cyber-dojo/exercises/Fizz_Buzz
+rm -rf /var/www/cyber-dojo/exercises/Game_of_Life
+rm -rf /var/www/cyber-dojo/exercises/Gray_Code
+rm -rf /var/www/cyber-dojo/exercises/Haiku_Review
+rm -rf /var/www/cyber-dojo/exercises/Harry_Potter
+rm -rf /var/www/cyber-dojo/exercises/ISBN
+rm -rf /var/www/cyber-dojo/exercises/LCD_Digits
+rm -rf /var/www/cyber-dojo/exercises/Leap_Years
+rm -rf /var/www/cyber-dojo/exercises/Mars_Rover
+rm -rf /var/www/cyber-dojo/exercises/Mine_Field
+rm -rf /var/www/cyber-dojo/exercises/Monty_Hall
+rm -rf /var/www/cyber-dojo/exercises/Number_Chains
+rm -rf /var/www/cyber-dojo/exercises/Number_Names
+rm -rf /var/www/cyber-dojo/exercises/Phone_Numbers
+rm -rf /var/www/cyber-dojo/exercises/Poker_Hands
+rm -rf /var/www/cyber-dojo/exercises/Prime_Factors
+rm -rf /var/www/cyber-dojo/exercises/Print_Diamond
+rm -rf /var/www/cyber-dojo/exercises/Recently_Used_List
+rm -rf /var/www/cyber-dojo/exercises/Reverse_Roman
+rm -rf /var/www/cyber-dojo/exercises/Reversi
+rm -rf /var/www/cyber-dojo/exercises/Roman_Numerals
+rm -rf /var/www/cyber-dojo/exercises/Tennis
+rm -rf /var/www/cyber-dojo/exercises/Unsplice
+rm -rf /var/www/cyber-dojo/exercises/Verbal
+rm -rf /var/www/cyber-dojo/exercises/Word_Wrap
+rm -rf /var/www/cyber-dojo/exercises/Yatzy
+rm -rf /var/www/cyber-dojo/exercises/Yatzy_Cutdown
+rm -rf /var/www/cyber-dojo/exercises/Zeckendorf_Number
