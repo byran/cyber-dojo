@@ -5,8 +5,15 @@ $text-color: darken($lighter-color, 10%);
 
   font-size: 1.15em;
 
-  margin-top: 25px;
-  margin-left: 0px;
+//  margin-top: 25px;
+//  margin-left: 0px;
+  
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  background: $darker-color;
+
+  padding: 4px;
 
   #cyber-dojo {
     font-family: Impact, Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
@@ -16,7 +23,7 @@ $text-color: darken($lighter-color, 10%);
     padding-bottom: 0px;
     position: relative;
     left: 3px;
-    top: -20px;
+//    top: -20px;
   }
 
   #home-page-logo {

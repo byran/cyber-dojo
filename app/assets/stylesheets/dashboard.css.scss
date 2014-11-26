@@ -1,7 +1,14 @@
 
 #dashboard-page {
 
-  margin: 25px;
+//  margin: 25px;
+
+  width: 1090px;
+  margin-left: auto;
+  margin-right: auto;
+  background: $darker-color;
+  
+  padding: 4px;
 
   #age-container, #controls-container, #team-bulb-counts-container {
     @include ghost-panel(5px);

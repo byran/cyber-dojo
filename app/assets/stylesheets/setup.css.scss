@@ -1,8 +1,15 @@
 
 #setup-page {
 
-  margin-top: 25px;
-  margin-left: 35px;
+//  margin-top: 25px;
+//  margin-left: 35px;
+
+  width: 1090px;
+  margin-left: auto;
+  margin-right: auto;
+  background: $darker-color;
+  
+  padding: 4px;
 
   #languages-container, #exercises-container {
     height: 475px;
