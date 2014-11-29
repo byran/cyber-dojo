@@ -22,6 +22,11 @@ CyberDojo::Application.routes.draw do
     get 're_enter' => :re_enter, :constraints => { :format => :json }
   end
 
+  scope path: '/competition', controller: :competition do
+    get  'entry(/:id)'      => :entry
+    post  'submit(/:id)'      => :submit
+  end
+
   scope path: '/setup', controller: :setup do
     get 'show(/:id)' => :show
     get 'save' => :save, :constraints => { :format => :json }

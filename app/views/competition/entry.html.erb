@@ -1,0 +1,13 @@
+
+<!-- form action="/competition/submit" method="get" -->
+
+<%= form_tag( { :action => 'submit',
+                :id     => @id,
+		:bob    => "Hi"
+              } ) do %>
+
+	<input type="hidden" name="KataID" value="<%= @id.to_s[0..5] %>" />
+
+	<input type="submit" value="Send" />
+
+<% end %>
