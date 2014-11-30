@@ -48,15 +48,15 @@ private
   def read_entry_file(filename)
     data = JSON.parse(dir.read(filename))
     {
-      :id => data["id"],
-      :fullname => data["fullname"],
-      :email => data["email"],
-      :publish => data["publish"],
-      :career => data["career"],
-      :news => data["news"],
-      :age => data["age"],
-      :ip => data["ip"],
-      :time => data["time"]
+      :id => data["id"] || "",
+      :fullname => data["fullname"] || "",
+      :email => data["email"] || "",
+      :publish => data["publish"] || "",
+      :career => data["career"] || "",
+      :news => data["news"] || "",
+      :age => data["age"] || "",
+      :ip => data["ip"] || "",
+      :time => data["time"] || ""
     }
   end
 
