@@ -1,3 +1,4 @@
+require 'Competition'
 
 class Dojo
 
@@ -26,6 +27,10 @@ class Dojo
     end
     katas_path += 'katas/'
     Katas.new(self, katas_path, @externals)
+  end
+
+  def competition
+    @competition ||= Competition.new(@path, @externals[:disk])
   end
 
 end

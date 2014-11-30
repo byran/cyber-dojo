@@ -1,13 +1,37 @@
 
-<!-- form action="/competition/submit" method="get" -->
+Thanks for taking the challenge!
+
+<br/>Please submit your entry using the form below. The closing date for the competition is January 31st 2015, and we will announce the winner within 28 days of the closing date.
+
+<br/>
+
+  <a href="https://twitter.com/share"
+     class="twitter-share-button"
+     data-count="none"
+     data-url="http://www.bluefruit.co.uk/win"
+     data-text="Just took the @BluefruitSW #programming challenge to win Google Glass! Try it yourself at: ">Tweet The Challenge!</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 <%= form_tag( { :action => 'submit',
-                :id     => @id,
-		:bob    => "Hi"
+                :id     => @id
               } ) do %>
 
-	<input type="hidden" name="KataID" value="<%= @id.to_s[0..5] %>" />
+<p>
+Full Name: <input type="text" name="fullname" maxlength="100" />
+<br/>Email address: <input type="text" name="email" maxlength="100" />
+<br/>Entry Code: <input type="text" name="KataID" value="<%= @id.to_s[0..5] %>" maxlength="100" />
+</p>
 
-	<input type="submit" value="Send" />
+<p>
+<input type="checkbox" name="publish" checked="checked" /> We intend to publish a list of the 5 star entries on our blog after the competition. Would you be happy for us to show your name and score on our website?
+
+<br/><input type="checkbox" name="career" checked="checked" /> Are you interested in a career at Bluefruit? Find out about our [job opportunities].(link to careers page, open in new window)
+
+<br/><input type="checkbox" name="news" checked="checked" /> Would you like to receive news, updates and information about future competitions in our monthly newsletter?
+
+<br/><input type="checkbox" name="age" /> Please tick the box to confirm that you are age 16 or older and have read and understood the [rules, terms and conditions].(link to terms page, open in new window)
+</p>
+
+<input type="submit" value="Send" />
 
 <% end %>

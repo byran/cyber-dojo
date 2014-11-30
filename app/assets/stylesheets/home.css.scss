@@ -81,7 +81,7 @@ $text-color: darken($lighter-color, 10%);
     position: relative;
     right: -1px;
   }
-  #create-button, #enter-button, #reenter-button,  #review-button {
+  #create-button, #enter-button, #reenter-button,  #review-button, #submit-button {
     font-family: Impact, Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
     color: $darker-color;
     @include font-size-largest();

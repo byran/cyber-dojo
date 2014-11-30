@@ -1,0 +1,20 @@
+
+<script type="text/javascript"><!--
+
+$(function() {
+
+  $('#submit-button').click(function() {
+    var id = $('#kata-id-input').val();
+    var url = '/competition/entry/' + id;
+    window.open(url)
+  });
+
+});
+
+//--></script>
+
+<button type="button"
+        id="submit-button"
+        title="submit your kata to the competition">
+  <%= t("views.buttons.submit") %>
+</button>

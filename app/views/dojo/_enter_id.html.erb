@@ -6,8 +6,9 @@ $(function() {
   var kataIdInput = $('#kata-id-input');
 
   var enterButton   = $('#enter-button');
-  var reviewButton  = $('#review-button');
+//  var reviewButton  = $('#review-button');
   var reEnterButton = $('#reenter-button');
+  var submitButton  = $('#submit-button');
 
   var disable = function(button) {
       button.prop('disabled', true);
@@ -25,12 +26,14 @@ $(function() {
     var id = kataIdInput.val();
     disable(enterButton);
     disable(reEnterButton);
-    disable(reviewButton);
+//    disable(reviewButton);
+    disable(submitButton);
     if (id.length >= 6) {
       $.getJSON('/dojo/check_id', { id: id }, function(dojo) {
         enableIf(enterButton, dojo.exists);
         enableIf(reEnterButton, dojo.exists);
-        enableIf(reviewButton, dojo.exists);
+//        enableIf(reviewButton, dojo.exists);
+        enableIf(submitButton, dojo.exists);
       });
     }
   };
