@@ -46,10 +46,14 @@ private
 
   def valid_id?(id)
     id.class.name === 'String' &&
-    id.length < 10 &&
+    id.length <= 10 &&
     id.chars.all?{|char| is_hex?(char)}
   end
 
+  def is_hex?(char)
+    '0123456789ABCDEF'.include?(char)
+  end
+  
   def read_entry_file(filename)
     data = JSON.parse(dir.read(filename))
     {
