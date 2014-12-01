@@ -29,7 +29,7 @@ class Competition
       :ip => ip,
       :time => Time.now
     }
-    dir.write(id + ".json", output)
+    dir.write(id + ".json", output) if valid_id(id)
   end
 
   def read_entry(id)
@@ -44,6 +44,11 @@ class Competition
 
 private
 
+  def valid_id?(id)
+    id.class.name === 'String' &&
+    id.length < 10 &&
+    id.chars.all?{|char| is_hex?(char)}
+  end
 
   def read_entry_file(filename)
     data = JSON.parse(dir.read(filename))
