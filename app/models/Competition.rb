@@ -29,7 +29,7 @@ class Competition
       :ip => ip,
       :time => Time.now
     }
-    dir.write(id + ".json", output) if valid_id(id)
+    dir.write(id + ".json", output) if valid_id?(id)
   end
 
   def read_entry(id)
