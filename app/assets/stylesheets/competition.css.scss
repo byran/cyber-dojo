@@ -1,0 +1,48 @@
+
+#competition-wrapper {
+
+  font-size: 1.15em;
+
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  background: $darker-color;
+
+  padding: 4px;
+
+  #submit-button {
+    background: darken($lighter-color, 10%);
+    color: $darker-color;
+    cursor: pointer;
+    padding: { left: 0.5em; right: 0.5em; bottom: 0.1em; }
+    text-decoration: none;
+    font-weight: normal;
+    border: $filename_and_button_border_size solid $darker-color;
+    @include rounded-corner(6px);
+    display: inline-block;
+    @include gradient-lighten(darken($lighter-color, 12%), 9%, 2%, 0%);
+  }
+  
+  #submit-button[disabled] {
+    background: lighten($darker-color, 20%);
+    cursor: default;
+  }
+  
+  #submit-button {
+    font-family: Impact, Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+    color: $darker-color;
+    @include font-size-largest();
+    padding-right: 20px;
+    margin-left: 10px;
+  }
+  
+  #submit-button-container {
+    text-align: center;  
+  }
+  
+  #competition-social {
+    text-align: center;
+  }
+
+}
+
