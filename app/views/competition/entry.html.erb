@@ -18,7 +18,7 @@
 		<p>
 			Full Name: <input type="text" name="fullname" maxlength="100" />
 			<br/>Email address: <input type="text" name="email" maxlength="100" />
-			<br/>Entry Code: <input type="text" name="KataID" value="<%= @id.to_s[0..5] %>" maxlength="100" />
+			<input type="hidden" name="KataID" value="<%= @id.to_s[0..5] %>" maxlength="100" />
 		</p>
 
 		<p>
